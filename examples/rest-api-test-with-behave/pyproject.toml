@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "rest-api"
+name = "rest-api-test-with-behave"
 version = "0.1.0"
 description = ""
 authors = ["Pyunghyuk Yoo <yoophi@gmail.com>"]
