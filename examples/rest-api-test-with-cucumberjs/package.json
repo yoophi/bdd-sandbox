@@ -1,0 +1,19 @@
+{
+  "name": "rest-api-test-with-cucumberjs",
+  "version": "1.0.0",
+  "description": "https://dev.to/ynmanware/bdd-for-rest-api-using-cucumber-js-2pol",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.0",
+    "cucumber-html-reporter": "^5.4.0"
+  }
+}
