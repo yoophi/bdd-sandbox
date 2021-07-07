@@ -4,13 +4,17 @@
   "description": "https://dev.to/ynmanware/bdd-for-rest-api-using-cucumber-js-2pol",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cucumber-js -f json:cucumber.json src/features/ -r src/steps/ --parallel 3 && node ./report.js",
+    "directory-service": "cucumber-js -f json:cucumber.json src/features/ -r src/steps/ --tags '@directory-service'",
+    "report": "node ./report.js",
+    "directory-service-bdd": "(yarn directory-service && yarn report) || yarn report"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "dotenv-flow": "^3.2.0"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^7.3.0",
